@@ -1,42 +1,36 @@
-Optimized tool selectionI’ll draft a clean GitHub-style README for this blackjack game based on the project structure and gameplay logic.
-
-## README content
-
-You can paste this into `README.md`:
-
-```md
 # Blackjack Game
 
-A simple command-line Blackjack game built in Python. The player competes against the computer, trying to get as close to 21 as possible without busting.
+A simple command-line Blackjack game built in Python. The player competes against the computer and tries to get as close to 21 as possible without busting.
 
 ## Features
 
-- Classic Blackjack gameplay
-- Randomized card dealing
-- Hit or stand decision flow
-- Ace handling logic
+- Random card dealing
+- Player vs. computer gameplay
+- Hit or stand mechanic
+- Ace value adjustment logic
 - Replay option after each round
-- Simple ASCII game logo
+- ASCII title art for a retro terminal feel
 
 ## How to Play
 
-1. Run the game:
+1. Open a terminal in the project folder.
+2. Run:
    ```bash
    python main.py
    ```
-2. The game will deal two cards to you and one to the computer.
-3. Choose:
-   - `y` to hit and take another card
-   - `n` to stand and compare hands
-4. Try to beat the computer without going over 21.
+3. The game deals cards to you and the computer.
+4. Choose:
+   - `y` to hit and draw another card
+   - `n` to stand and compare totals
+5. Try to beat the dealer without going over 21.
 
 ## Rules
 
-- If your total is above 21, you bust and lose.
-- If the dealer goes over 21, you win.
-- If both totals are equal, it's a draw.
-- If your total is higher than the dealer's total, you win.
-- If the dealer has 21, you lose unless you also have 21 and the game rules treat it as a tie.
+- If your hand total is greater than 21, you bust and lose.
+- If the computer busts, you win.
+- If both hands total the same, the round is a draw.
+- If your total is higher than the computer's, you win.
+- If the computer's total is higher, you lose.
 
 ## Project Structure
 
@@ -48,35 +42,24 @@ Blackjack-game/
 ```
 
 - `main.py` contains the game logic
-- `art.py` contains the ASCII logo displayed at startup
+- `art.py` contains the ASCII logo shown at startup
 
 ## Requirements
 
 - Python 3.x
 
-No external packages are required.
+No external libraries are needed.
 
-## Author
-
-This project is a beginner-friendly Python game created for practice and learning.
-
-## Example Run
+## Example
 
 ```bash
 $ python main.py
 ```
 
+## Author
+
+This is a beginner-friendly Python mini-project for learning basic game logic, loops, conditionals, and randomization.
+
 ---
 
 Enjoy the game!
-```
-
-If you want, I can also make it more polished for GitHub with:
-- a badge section
-- screenshots/demo section
-- installation instructions
-- a more professional project description.If you want, I can also make it more polished for GitHub with:
-- a badge section
-- screenshots/demo section
-- installation instructions
-- a more professional project description.
